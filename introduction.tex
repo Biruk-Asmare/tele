@@ -1,0 +1,55 @@
+This proposal is written in response to the call for proposal for the development of affordable telecommunication engineering teaching aid tools. In this work, we propose a software tool that will be used as a teaching aid on the course of Data communication and computer networks (ECEG-6309). More specifically, on the chapter of introduction to routing and traffic control. 
+
+The proposed tool can be used as a teaching aid to teach routing algorithms. The routing algorithms included in the tool are spanning tree algorithm,  Dijkstra algorithm, Belman-Ford algorithm, distance vector routing and link-state routing which are  bases of many routing protocols. Our proposed tool will provide a visual demonstration of how the aforementioned algorithms operate. 
+
+The other concept we will include in the tool is demonstration of the functionality of network address translation (NAT). This topic is usually dealt under  the topic of addressing specifically IPV4 addressing. It is a little bit challenging to explain the operation of NAT without using a visual aid. In our tool, students will see the functionality by experimenting with custom created networks. 
+
+The tool will be dynamic and configurable to help students experiment and understand routing algorithms very well. Students will be able to experiment by setting up a custom network with custom parameters. Users of the tool are able to create any network topology and they can run all the supported algorithms on that topology. This creates a very good learning and teaching environment for both students and instructors. In addition users will be able to save the state of their work so that they can revisit their work at any time and continue to work on.  
+
+The proposed tool will be developed by using cross platform technologies to maximize usability of the tool. Specifically, we use JAVA programming language which is supported by most operating systems. We will provide a desktop application that can run on any machine that has java  run-time environment (JRE) installed.  
+
+\subsection{Routing algorithms}
+ In this section we will give brief introduction to the routing algorithms that are included in our tool. Our tool includes, spanning tree algorithm,  Dijkstra algorithm, Belman-Ford algorithm, distance vector routing and link-state routing.
+ 
+ \subsubsection{Spanning tree algorithm}
+ 
+ A spanning tree is a subset of a graph in which all vertices  are covered with minimum possible number of edges. A spanning tree does not have a cycle and it can not be disconnected. A graph may have more than one spanning tree. 
+ 
+Spanning tree algorithm is the base of Spanning Tree Protocol (STP). STP is a layer 2 protocol that runs on bridges and switches. STP makes sure that there are no loops or redundant paths in the network.
+
+\subsubsection{Dijkstra algorithm}
+
+Dijkstra algorithm is used to find shortest path between nodes in a graph. The costs that are used to compute the shortest path include link distance, bandwidth, delay, price or a combination of them. 
+
+Dijkstra algorithm can be applied in fields such as transport networks and data networks. In our case, routers in a network are represented as nodes and Dijkstra algorithm will help to find the shortest path among the nodes or routers. After computation, the information is used to route packets among routes.   
+ 
+ \subsubsection{Belman-Ford algorithm}
+  
+  Belman-Ford algorithm is also used to compute shortest path among nodes. It is an alternative of Dijkstra algorithm. Belman-Ford algorithm can work with edges with negative cost. It is used as a basis of RIP (Routing information protocol).
+  
+  \subsubsection{Distance vector routing}
+  
+ This is the base of distance vector routing protocol. In this algorithm partial information about the network is used to make routing decision. Router collects routing information from neighbor routers or routers with direct link. The shortest path computed by using Belman-Ford algorithm. Here, we focus on how the routing table is formed by a router and not on how the shortest path is computed
+ 
+ \subsubsection{Link-state routing}
+ 
+ This is another routing algorithm in which every router constructs a map of connectivity of the network. Each router computes shortest path starting from itself to other nodes independently. After that information is exchanged among routers to build a path between each routers. Dijkstra algorithm is used to compute shortest paths.
+ 
+ \subsection {Network address translation}
+ 
+ Network address translation is a method of mapping one IP address space in to another by modifying the network address. It translates between private IP address and public IP addresses. NAT also uses ports from transport layer for mapping together with IP address. Our tool will provide a visual aid for users to understand how address is translated by sending message from one host to another and changing the IP addresses of hosts and network.
+ \pagebreak
+ \section{Problem statement}
+ 
+ We try to address the problem of luck of availability of teaching aids in telecommunication engineering. Specifically, on data communication and computer networks. From the topics addressed in the course, concepts of internet routing and address translation require great effort from students and instructors. The algorithms and routing protocols are not difficult to understand. The main problem is the way in which the instructor teaches the concepts to the students. Currently, instructors just give theoretical background and examples on those concepts. But to provide concrete understanding visual tools and aids are very important. Visual tools provide very clear view or perspective to students and help them to grasp the concepts behind and how the algorithms operate. 
+ 
+ \section{Objective}
+ The general objective of this proposal is to provide a tool for data communication and computer networks course that can be used as a teaching aid for students and instructors.
+ \subsection{Specific objectives}
+ 
+ \begin{itemize}
+ 	\item Perform literature review on related systems
+ 	\item Identify functional and non functional requirements of the system
+ 	\item Design and implement the proposed system
+ 	\item Test and deploy the tool 
+ \end{itemize}

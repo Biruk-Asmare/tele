@@ -1,0 +1,40 @@
+
+\documentclass[11pt,a4paper,onecolumn]{IEEEtran}
+%\usepackage{ragged2e}
+\usepackage[]{natbib}
+\usepackage{tocloft}
+\usepackage{fancyheadings}% for header footer and page style
+\usepackage{fancyhdr}
+%\usepackage[tocflat]{tocstyle}
+%\usetocstyle{standard}
+
+%\usepackage{apacite}♠
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+%opening
+\title{}
+\author{}
+\pagestyle{fancy}
+\newcommand{\tstamp}{\today}   
+%header and footer defnitions
+%E:Even,O:odd,R,L,C direction and H: header, F: footer
+\fancyhead[RO,RE]{\today}
+\fancyhead[LO,LE]{Research proposal}
+\fancyfoot[LO,LE]{Biruk Asmare}
+\fancyfoot[RO,RE]{\thepage}
+\fancyfoot[CO,CE]{}
+\renewcommand{\footrulewidth}{0.4pt}%add line on the footer
+
+%\usepackage[document]{ragged2e}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+%changing numbering styles
+%\renewcommand\thesection{\Roman{section}}
+%\renewcommand\thesubsection{\Alph{subsection}}
+\setlength{\parindent}{0pt}% avoids paragraph indentation
+\setlength{\parskip}{1em}%space between paragraphs
+\begin{document}
+	
+\section{Background and Introduction}
+\input{introduction}
+
+\end{document}
